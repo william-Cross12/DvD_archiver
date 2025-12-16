@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="icon" type="image/x-icon" href="/frontend/media/images/favicon-standard.ico">
+        <title>Film Analytics Login</title>
+    </head>
+    <body>  
+        <header id="nav"></header>
+        <div class="default-container">
+            <h1 id="search-header">Film Analytics Platform Search</h1>
+            <form class="default-form" id="search-form">
+                <label for="query">Search for a film:</label><br>
+                <input type="text" id="query" name="query" value="vertigo" required>
+                <button type="submit" class="nav-button"> Search </button>
+            </form>
+        </div>
+        <div id="results-container" class="results-container">
+            <h2>Search Results:</h2>
+            <div id="results"></div>
+        </div>  
+         <script type="module" src="/frontend/js/films/search.js"></script>
+        <script src="/frontend/js/main.js"></script>
+    </body>
+</html>

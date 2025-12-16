@@ -1,0 +1,49 @@
+.film-result {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.popular-films {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    height: 60vh;
+}
+
+.film-result img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px 0 5px 0;
+}
+
+@media (max-width: 1000px) {
+    .popular-films {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:90%;
+        height:100%;
+        margin: 0 auto;
+    }
+
+    .film-result {
+        width: 100%;
+    }
+
+    welcome {
+        text-align: center;
+    }
+    
+    content {
+        text-align: center;
+    }
+    
+    
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="/frontend/css/film.css">
+        <link rel="icon" type="image/x-icon" href="/frontend/media/images/favicon-standard.ico">
+        <title>Film Analytics Platform</title>
+    </head>
+    <body>  
+        <header id="nav"></header>
+
+        <div class="results-container">
+            <header class="default-header-1" id="film-header">Your Reviews</header>
+        </div>  
+
+        <div class="film-container">
+            <div id="film-details" class="film-details"></div>
+            <div id="reviews" class="reviews">
+                <!-- <header class="default-header-1">Reviews</header> -->
+                <br>
+            </div>
+        </div>
+
+        <div id="review-container" class="results-container"></div>
+
+        <script type="module" src="/frontend/js/authenticated/reviews.js"></script>
+        <script src="/frontend/js/main.js"></script>
+    </body>
+</html>

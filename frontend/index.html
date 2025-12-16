@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DVD Catalog</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="/frontend/media/images/favicon-standard.ico">
+        <link rel="stylesheet" href="/frontend/css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Film Analytics</title>
+    </head>
+    <body>
+        <header id="nav"></header>
+        <welcome>
+            <h1>Film Analytics Dashboard</h1>
+            <div id="dashboard">
+                <p>
+                    Welcome to the Film Analytics Landing Page. Here you can navigate
+                    to your favourite movies and explore there ratings and find recommendations.
+                </p>
+                <!-- Dashboard content will be dynamically inserted here -->
+            </div>
+        </welcome>
+        <content>
+            <h1 id="popular-films-title">Popular Films</h1>
+            <div id="popular-films" class="popular-films">
+                <!-- Popular films will be dynamically inserted here -->
+            </div>
+        </content>
+
+        <script src="/frontend/js/main.js"></script>
+        <script type="module" src="/frontend/js/index.js"></script>
+    </body>
+
 </html>

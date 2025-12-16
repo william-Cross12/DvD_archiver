@@ -1,0 +1,145 @@
+.film-container {
+    height: calc(100vh - 5vh - var(--nav-height));
+    
+}
+
+.reviews {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+
+.review {
+    min-width: 80vw;
+    background-color: rgba(1, 22, 90,0.85);
+    color: rgba(255, 255, 255, 0.822);
+    border:none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.review-text {
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+.film-details { 
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    margin:0 auto;
+    padding: 20px
+    
+}
+
+.film-details p {
+    font-size: 24px;
+}
+
+.film-details img {
+    height:auto;
+    width:100%;
+    max-width: 70%;
+    min-width: 265px;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+.film-left {
+    text-align: right;
+    height:100%;
+    max-width:50vh;
+    flex:1;
+}
+
+.film-right {
+   align-self: top;
+   padding-left: 8px;
+}
+
+
+.plot {
+    max-width:700px
+}
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+    width : 50%;
+    height : 50px;
+    padding : 0px;
+}
+
+#trailer iframe {
+    align-self: center;
+    width: 60vw;
+    height: 60vh;
+    border: none;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .film-header {
+        font-size: 32px;
+    }
+
+    .film-details p {
+        font-size: 20px;
+    }
+
+    .film-container {
+        overflow-y: auto;
+    }
+
+    .film-details  {
+        flex-direction: column;
+        align-items: flex-start;
+        height:auto;
+    }
+
+    .plot {
+        max-width: 75%;
+        margin:0 auto;
+    }
+
+    .film-left {
+        min-height: 50%;
+    }
+        
+
+    .film-left ,
+    .film-right {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        max-height: none;
+        max-width: none;
+    }
+
+    .film-details img {
+        width : 50%;
+        max-width: 100%;
+        min-width: 300px;
+        height: auto;
+    }
+
+    .review {
+        min-width: 90vw;
+        text-align: center;
+    }
+
+    #trailer iframe {
+        width: 100vw;
+        height: 40vh;
+    }
+
+}

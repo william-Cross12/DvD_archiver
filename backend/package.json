@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "film-analytics-backend",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "author": "Rowan Moss",
+  "license": "ISC",
+  "description": "Backend for Will Cross' Film Analytics",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.56.0",
+    "axios": "^1.12.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jest": "^30.1.3"
+  }
+}
